@@ -30,9 +30,7 @@ export default function PortfolioPage() {
       detail: `Developed a national-scale crop planting phase monitoring system using multi-sensor satellite data and machine learning to support data-driven agricultural planning. The project integrates Sentinel-1, Sentinel-2, Landsat, and MODIS imagery to generate dense NDVI time series and accurately detect planting dates (H0) across agricultural areas. By combining deep learning–based SAR-to-NDVI reconstruction and spatio-temporal data fusion, the system reduces cloud-related data gaps and improves temporal monitoring of crop growth. The resulting model enables more precise identification of planting cycles, supporting efficient fertilizer allocation, agricultural monitoring, and national food security planning.`,
       image: "/1. Crop Commodity Mapping using Machine Learning Approach/Deep Learning NDVI.png",
       images: ["/1. Crop Commodity Mapping using Machine Learning Approach/ESTARFM.png", "/1. Crop Commodity Mapping using Machine Learning Approach/Grafik Karanganyar.png", "/1. Crop Commodity Mapping using Machine Learning Approach/Grrafik Magetan.png"],
-      tags: ["GIS", "Remote Sensing", "Geo AI", "Crop Mapping","Spatial Modelling"],
-      client: "Indonesia Agrichemical Research Institute (IARI) PT. Pupuk Indonesia",
-       clientLogo: "/PTPI.png"
+      tags: ["GIS", "Remote Sensing", "Geo AI", "Crop Mapping","Spatial Modelling"]
     },
     {
       title: "Deep Learning for Forest Cover Mapping",
@@ -40,9 +38,7 @@ export default function PortfolioPage() {
       detail: `Supporting national climate targets through Indonesia’s FOLU Net Sink 2030 program by providing Geo-AI solutions for natural resource and carbon mapping. This project focuses on developing machine learning and deep learning-based workflows that integrate LiDAR data and multispectral imagery for high-precision Land Use/Land Cover (LULC) modeling and above-ground biomass (AGB) estimation. The reliability of these inference models has been tested and validated through extensive field surveys, yielding accurate forest inventory data and land use metrics to support ecosystem evaluation policies in Indonesia.`,
       image: "/2. Deep Learning for Forest Cover Mapping/LULC_prediction.png",
       images: ["/2. Deep Learning for Forest Cover Mapping/paper 2.jpg", "/2. Deep Learning for Forest Cover Mapping/paper1.jpg", "/2. Deep Learning for Forest Cover Mapping/WhatsApp Image 2024-09-22 at 07.19.19_f7b5f3a5.jpg", "/2. Deep Learning for Forest Cover Mapping/WhatsApp Image 2024-09-25 at 12.38.33_7f81943e.jpg", "/2. Deep Learning for Forest Cover Mapping/WhatsApp Image 2025-05-21 at 13.26.59_bbda2855.jpg", "/2. Deep Learning for Forest Cover Mapping/WhatsApp Image 2024-09-25 at 12.55.37_c85a8034.jpg"],
-      tags: ["GIS", "Remote Sensing", "Geo AI", "Forest Cover"],
-      client: "Indonesia's FOLU Net Sink 2030",
-       clientLogo: "/Logo IFNS2030 (warna) 1.png"
+      tags: ["GIS", "Remote Sensing", "Geo AI", "Forest Cover"]
     },
     {
       title: "Seaweed Cover Mapping",
@@ -50,9 +46,7 @@ export default function PortfolioPage() {
       detail: `This project develops a deep learning-based tool for automatically analyzing satellite imagery, specifically designed to map and measure seaweed production areas in South Sulawesi. Through this tool, we successfully identified drastic data fluctuations: there was a surge in production area expansion during the 2022–2023 period due to high market prices, which then plummeted by up to 50% in 2024 due to falling prices and extreme weather challenges. This solution offers a practical foundation for the Indonesian government to manage the seaweed industry amid the threat of climate change, and these findings will be published online to support better policy-making.`,
       image: "/3. Seaweed Cover Mapping/Output/PREVIEW BENCHMARK.png",
       images: ["/3. Seaweed Cover Mapping/Output/2024.png", "/3. Seaweed Cover Mapping/Output/augment_sam_2.jpg",  "/3. Seaweed Cover Mapping/Output/layout peta report koneksi.png", "/3. Seaweed Cover Mapping/P6150514.jpg", "/3. Seaweed Cover Mapping/P6120181.jpg", "/3. Seaweed Cover Mapping/P6140271.jpg", "/3. Seaweed Cover Mapping/PA160003.jpg", "/3. Seaweed Cover Mapping/PA160163.jpg", "/3. Seaweed Cover Mapping/PA160157.jpg"],
-      tags: ["GIS", "Remote Sensing", "Geo AI", "Seaweed"],
-      client: "KONEKSI, Universitas Queensland, Universitas Hasanuddin, Universitas Nusa Cendana",
-       clientLogo: "/koneksi.png"
+      tags: ["GIS", "Remote Sensing", "Geo AI", "Seaweed"]
     },
     {
       title: "Workshop: Geo-AI System for Carbon Storage Assessment",
@@ -60,9 +54,8 @@ export default function PortfolioPage() {
       detail: `Delivered a technical training program on Geo-AI, remote sensing, and machine learning for forest carbon monitoring, supporting Indonesia’s FOLU Net Sink 2030 initiative. Designed and facilitated hands-on sessions covering deep learning land-cover classification, UAV/LiDAR data acquisition, and carbon stock estimation workflows using Python, R, and Google Colab. Enabled researchers and practitioners to apply data-driven geospatial methods for scalable forest carbon assessment and environmental monitoring.`,
       image: "/4. GeoAI/DSC07120.jpg",
       images: ["/4. GeoAI/DSC07120.jpg", "/4. GeoAI/DSC07393.jpg", "/4. GeoAI/DSC07392.jpg", "/4. GeoAI/DSC08240.jpg", "/4. GeoAI/DSC07771.jpg", "/4. GeoAI/DSC07529.jpg"],
-      tags: ["GIS", "Remote Sensing", "Geo AI", "Workshop"],
-      client: "Indonesia's FOLU Net Sink 2030",
-       clientLogo: "/Logo IFNS2030 (warna) 1.png" // 🔥 TAMBAH INI
+      tags: ["GIS", "Remote Sensing", "Geo AI", "Workshop"]
+      
     }
   ];
 
