@@ -441,8 +441,7 @@ export default function Home() {
             <div className="icon">🎓</div>
             <h3>AGI Academy</h3>
             <p>
-              Bootcamp GIS & AI, sertifikasi keahlian geospasial, dan pelatihan
-              data satelit.
+              GIS & AI bootcamps, geospatial certification programs, and satellite data training.
             </p>
           </div>
 
@@ -450,8 +449,7 @@ export default function Home() {
             <div className="icon">🔬</div>
             <h3>AGI Research & Innovation</h3>
             <p>
-              Riset berbasis Geospatial AI untuk studi lingkungan dan earth
-              observation.
+              Advanced Geospatial AI research for environmental analysis and Earth observation.
             </p>
           </div>
 
@@ -459,7 +457,7 @@ export default function Home() {
             <div className="icon">🌍</div>
             <h3>AGI Solutions</h3>
             <p>
-              Solusi teknologi dan jasa konsultansi berbasis data geospasial.
+              Innovative technology solutions and consulting services powered by geospatial data.
             </p>
           </div>
         </div>
@@ -468,7 +466,7 @@ export default function Home() {
           .lob-card {
             padding: 32px;
             border-radius: 22px;
-            background: rgba(255, 255, 255, 0.06);
+            background: rgba(255, 255, 255, 0.50);
             border: 1px solid rgba(255, 255, 255, 0.12);
             backdrop-filter: blur(14px);
             transition: all 0.35s ease;
