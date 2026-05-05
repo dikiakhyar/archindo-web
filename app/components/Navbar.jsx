@@ -187,6 +187,7 @@ export default function Navbar() {
 </a>
   </div>
 </div>
+          <a href="/" style={{ color: dark ? "white" : "black" }}>Latest News</a>
           <a href="/services" style={{ color: dark ? "white" : "black" }}>Services</a>
           <a href="/portofolio" style={{ color: dark ? "white" : "black" }}>Portfolio</a>
           <a href="/contact" style={{ color: dark ? "white" : "black" }}>Contact</a>
