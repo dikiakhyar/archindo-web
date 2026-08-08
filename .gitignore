@@ -44,3 +44,9 @@ node_modules/
 .next/
 *.tif
 *.zip
+
+# backup gambar asli sebelum kompresi (jangan ikut di-deploy)
+/_images-original/
+
+# file pratinjau lokal, bukan bagian dari situs
+/_preview/
