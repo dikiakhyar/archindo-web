@@ -16,14 +16,41 @@ const TEAM = [
   },
   {
     name: "Marzuki, S.Kel., M.Sc.",
-    badge: "Remote Sensing & GIS Analyst",
+    badge: "Research Officer",
     image: "/marzuki2.webp",
   },
   {
+    name: "Maulydia Febrianti Pratiwi, S.Si.",
+    badge: "Research Officer",
+    image: "/maulydia-febrianti-pratiwi.jpeg",
+  },
+  {
     name: "Nur Laila Eka Utami, S.Si.",
-    badge: "Remote Sensing & GIS Analyst",
+    badge: "Consultant",
     image: "/23.webp",
   },
+  {
+    name: "Mulyadi Alwi, S.Si., M.Sc.",
+    badge: "Consultant",
+    image: "/mulyadi-alwi.jpg",
+  },
+  {
+    name: "Daniel Valerie Sahat Hutahaean",
+    badge: "INTERNSHIP",
+    image: "/daniel-valerie-sahat-hutahaean.jpeg",
+  },
+  {
+    name: "Ageng Haryo Widagdo",
+    badge: "INTERNSHIP",
+    image: "/ageng-haryo-widagdo.jpeg",
+  },
+];
+
+const TEAM_GROUPS = [
+  { id: "founder", title: "Founder", badge: "Founder" },
+  { id: "research-officer", title: "Research Officer", badge: "Research Officer" },
+  { id: "consultant", title: "Consultant", badge: "Consultant" },
+  { id: "interns", title: "Interns", badge: "INTERNSHIP" },
 ];
 
 export default function TeamPage() {
@@ -41,25 +68,41 @@ export default function TeamPage() {
           <p>The people behind innovation and impact</p>
         </div>
 
-        <div className="container card-grid card-grid--team">
-          {TEAM.map((member) => (
-            <article key={member.name} className="card team-card reveal">
-              <div className="card__media card__media--portrait">
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  fill
-                  sizes="(max-width: 640px) 92vw, 320px"
-                  className="img-hover"
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
+        <div className="container team-groups">
+          {TEAM_GROUPS.map((group) => (
+            <section
+              key={group.id}
+              className={`team-group${group.id === "founder" || group.id === "interns" ? " team-group--full" : ""}`}
+              aria-labelledby={`team-${group.id}`}
+            >
+              <h3 id={`team-${group.id}`} className="team-group__title reveal">{group.title}</h3>
+              <div className="card-grid card-grid--team">
+                {TEAM.filter((member) => member.badge === group.badge).map((member) => (
+                  <article key={member.name} className="card team-card reveal">
+                    <div className="card__media card__media--portrait">
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        fill
+                        sizes={
+                          member.name === "Daniel Valerie Sahat Hutahaean"
+                            ? "(max-width: 640px) 294.4vw, 1024px"
+                            : member.name === "Mulyadi Alwi, S.Si., M.Sc."
+                              ? "(max-width: 640px) 124vw, 432px"
+                            : "(max-width: 640px) 92vw, 320px"
+                        }
+                        className="img-hover"
+                        style={{ objectFit: "cover" }}
+                      />
+                    </div>
 
-              <div className="card__body team-card__body">
-                <h3>{member.name}</h3>
-                <span className="tag">{member.badge}</span>
+                    <div className="card__body team-card__body">
+                      <h4>{member.name}</h4>
+                    </div>
+                  </article>
+                ))}
               </div>
-            </article>
+            </section>
           ))}
         </div>
       </section>

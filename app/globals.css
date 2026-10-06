@@ -1456,23 +1456,99 @@ li {
 }
 
 /* ---- Our Team ---- */
+.team-groups {
+  max-width: var(--content-max);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(36px, 6vw, 56px) 36px;
+}
+
+.team-group {
+  min-width: 0;
+}
+
+.team-group--full {
+  grid-column: 1 / -1;
+}
+
+.team-group:not(.team-group--full) .card-grid--team {
+  grid-template-columns: repeat(2, minmax(0, 320px));
+}
+
+@media (max-width: 900px) {
+  .team-groups {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .team-group:not(.team-group--full) .card-grid--team {
+    grid-template-columns: minmax(0, 320px);
+  }
+}
+
+.team-group__title {
+  margin: 0 0 22px;
+  text-align: center;
+  color: var(--heading);
+  font-size: clamp(21px, 3vw, 26px);
+}
+
 .card-grid--team {
   max-width: 1000px;
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 320px));
+  justify-content: center;
 }
 
 .card__media--portrait {
   aspect-ratio: 3 / 4;
-  max-height: 320px;
+  overflow: hidden;
+}
+
+.team-card img[alt="Maulydia Febrianti Pratiwi, S.Si."] {
+  object-position: center top;
+}
+
+.team-card img[alt="Nur Laila Eka Utami, S.Si."] {
+  /* The bottom edge stays flush: 115% height minus 15% offset. */
+  height: 115% !important;
+  inset: -15% 0 auto !important;
+}
+
+.team-card img[alt="Mulyadi Alwi, S.Si., M.Sc."] {
+  width: 135% !important;
+  height: auto !important;
+  max-width: none;
+  inset: -53% auto auto -17.5% !important;
+}
+
+.team-card img[alt="Daniel Valerie Sahat Hutahaean"] {
+  width: 320% !important;
+  height: auto !important;
+  max-width: none;
+  inset: -119% auto auto -110% !important;
+}
+
+.team-card img[alt="Ageng Haryo Widagdo"] {
+  object-position: center top;
 }
 
 .team-card__body {
   text-align: center;
 }
 
-.team-card__body h3 {
+.team-card__body h4 {
   margin-bottom: 8px;
+  color: var(--heading);
   font-size: clamp(14px, 2vw, 16px);
   line-height: 1.4;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .team-card:hover,
+  .team-card:hover .img-hover {
+    transform: none;
+  }
 }
 
 /* ---- Portfolio ---- */
