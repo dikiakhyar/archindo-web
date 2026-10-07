@@ -44,6 +44,8 @@ node_modules/
 .next/
 *.tif
 *.zip
+!output/checkpoints/*.zip
+/output/local-backups/
 
 # backup gambar asli sebelum kompresi (jangan ikut di-deploy)
 /_images-original/
